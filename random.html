@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Thoughts - Jackson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: #f9f9f7;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a73e8;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #1a73e8;
+            text-align: center;
+        }
+
+        .entry {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .entry-image {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .entry:hover .entry-image {
+            transform: scale(1.02);
+        }
+
+        .entry-title {
+            font-family: 'Arimo', sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 20px 0;
+            color: #444;
+        }
+
+        .entry-date {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .entry-content {
+            line-height: 1.8;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background-color: white;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                position: static;
+                text-align: center;
+                padding: 20px 0;
+                background-color: white;
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
+            
+            .content {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="deep.html">Deep Stuff</a>
+        <a href="random.html">Random Thoughts</a>
+    </nav>
+
+    <div class="content">
+        <h1>Random Thoughts</h1>
+        
+        <div class="entry">
+            <div class="entry-image" style="background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D&w=1000&q=80');"></div>
+            <h2 class="entry-title">The Silence Between Waves</h2>
+            <div class="entry-date">November 15, 2023</div>
+            <div class="entry-content">
+                <p>There's something profound in the space between waves—that momentary stillness when the ocean seems to catch its breath. I find myself seeking those pauses in my own life, the quiet moments between activities where everything settles and clarity emerges.</p>
+                <p>We often focus on the waves themselves—the big moments, the actions, the visible movements. But the magic might actually be in those silent intervals where everything resets.</p>
+            </div>
+        </div>
+        
+        <div class="entry">
+            <div class="entry-image" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fHw%3D&w=1000&q=80');"></div>
+            <h2 class="entry-title">Morning Light Through Different Windows</h2>
+            <div class="entry-date">October 28, 2023</div>
+            <div class="entry-content">
+                <p>I've been noticing how the morning light changes depending on which window I view it through in my home. The kitchen window shows it filtered through oak leaves, my bedroom window frames it rising over distant hills, and the bathroom window (of all places) catches the most brilliant golden reflections.</p>
+                <p>It makes me wonder—how many other things in life appear completely different based on which "window" we choose to view them through?</p>
+            </div>
+        </div>
+        
+        <div class="entry">
+            <div class="entry-image" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fHw%3D&w=1000&q=80');"></div>
+            <h2 class="entry-title">The Weight of a Stone</h2>
+            <div class="entry-date">October 10, 2023</div>
+            <div class="entry-content">
+                <p>I picked up a smooth stone at the beach today—just an ordinary gray stone that fit perfectly in my palm. As I held it, I thought about how this simple object contained entire geological eras, countless waves that had shaped it, and now, for this brief moment, my attention.</p>
+                <p>We carry so much through life—not just physical objects but memories, ideas, relationships. Some feel light as feathers, others heavy as stones. But even the heaviest things we carry have been shaped by time and experience into something that fits perfectly in the contours of who we are.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Hit me up if you wanna talk about waves or Random Thoughts
+    </footer>
+</body>
+</html>
