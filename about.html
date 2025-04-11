@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jackson - Explore. Move. Reflect.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a73e8;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        h1 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #1a73e8;
+        }
+
+        h2 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .hobby {
+            background-color: #e8f4fd;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background-color: white;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                position: static;
+                text-align: center;
+                padding: 20px 0;
+                background-color: white;
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
+            
+            .content {
+                margin: 20px auto;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="deep.html">Deep Stuff</a>
+        <a href="random.html">Random Thoughts</a>
+    </nav>
+
+    <div class="content">
+        <h1>About Jackson</h1>
+        
+        <p>Hey there! I'm Jackson. Welcome to my little corner of the internet where I share my journey through life, thoughts that keep me up at night, and the things that bring me joy.</p>
+        
+        <h2>Background</h2>
+        <p>I'm a curious soul who's always looking for new experiences and perspectives. Originally from the coast, I've carried my love for the ocean with me wherever I go. My professional journey has taken me through various fields, but I've always remained true to my core values of exploration and growth.</p>
+        
+        <h2>Philosophy</h2>
+        <p>I believe life is about the balance between movement and reflection. We need to explore and push our boundaries, but equally important is taking the time to process those experiences and learn from them. This duality is at the heart of everything I do.</p>
+        
+        <h2>Hobbies & Interests</h2>
+        <div class="hobbies">
+            <span class="hobby">Surfing</span>
+            <span class="hobby">Philosophy</span>
+            <span class="hobby">Travel</span>
+            <span class="hobby">Photography</span>
+            <span class="hobby">Meditation</span>
+            <span class="hobby">Reading</span>
+            <span class="hobby">Hiking</span>
+            <span class="hobby">Writing</span>
+        </div>
+        
+        <h2>Current Focus</h2>
+        <p>Right now, I'm working on being more present in everyday moments and finding depth in simplicity. I'm also documenting my journey through video and writing, which you can explore in the other sections of this site.</p>
+    </div>
+
+    <footer>
+        Hit me up if you wanna talk about waves or Random Thoughts
+    </footer>
+</body>
+</html>
