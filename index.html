@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson - Explore. Move. Reflect.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'IBM Plex Mono', monospace;
+            background-image: url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .left-side {
+            flex: 1;
+            background-image: url('homepage_bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 5%;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1a73e8;
+        }
+
+        h1 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1.2rem;
+            margin-top: 0;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .left-side, .right-side {
+                flex: none;
+                width: 100%;
+                min-height: 50vh;
+            }
+            
+            nav {
+                position: static;
+                text-align: center;
+                padding: 20px 0;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
+            
+            .right-side {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="about.html">About Me</a>
+        <a href="deep.html">Deep Stuff</a>
+        <a href="random.html">Random Thoughts</a>
+    </nav>
+
+    <div class="container">
+        <div class="left-side"></div>
+        <div class="right-side">
+            <h1>Jackson</h1>
+            <p class="tagline">Explore. Move. Reflect.</p>
+        </div>
+    </div>
+
+    <footer>
+        Hit me up if you wanna talk about waves or Random Thoughts
+    </footer>
+</body>
+</html>
